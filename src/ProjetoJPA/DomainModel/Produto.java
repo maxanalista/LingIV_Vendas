@@ -8,6 +8,7 @@ public class Produto {
 
 	@Column(name="Codigo")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@OneToMany(fetch=FetchType.LAZY)
 	@Id
 	private int Codigo;
 	

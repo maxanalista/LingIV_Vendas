@@ -11,7 +11,6 @@ public class ItensVenda {
 	@Id
 	private int Codigo;
 	
-	@Column
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="Produto")
 	private Produto Produto;

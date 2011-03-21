@@ -17,8 +17,8 @@ public class Vendas {
 	@JoinColumn(name="Cliente")
 	private Clientes cliente;
 	
-	@Column(name="Data")
-	private Date data;
+//	@Column(name="Data")
+//	private Date data;
 	
 	@Column(name="ValorTotal")
 	private float valortotal;
@@ -39,13 +39,13 @@ public class Vendas {
 		this.cliente = cliente;
 	}
 
-	public Date getData() {
-		return data;
-	}
+//	public Date getData() {
+//		return data;
+//	}
 
-	public void setData(Date data) {
-		this.data = data;
-	}
+//	public void setData(Date data) {
+//		this.data = data;
+//	}
 
 	public float getValortotal() {
 		return valortotal;

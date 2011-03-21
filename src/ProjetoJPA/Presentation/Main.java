@@ -22,9 +22,11 @@ public class Main {
 		ProdutoRepository prepo = new ProdutoRepository();
 		Produto pobj = new Produto();
 		pobj.setNome("Melancia");
+		System.out.println("Gravo nome");
 		//pobj.setPrecoUnitario(2);
 		try{
 			prepo.Save(pobj);
+			System.out.println("gravou no banco");
 		}
 		catch(Exception ex){
 			System.out.println(ex.getMessage());
